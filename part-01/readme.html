@@ -1,0 +1,1279 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>readme</title></head><body><article class="markdown-body"><h1 id="readme"><a name="user-content-readme" href="#readme" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Readme</h1>
+<p><strong>Note</strong>: This project was conducted in Jupyter notebooks running Python 3.6 kernels. All python packages installed on the team&rsquo;s environment and their corresponding versions are listed in <strong>requirements.txt</strong>.</p>
+<p>For code and additional comments, please see the individual <strong>notebooks</strong>.</p>
+<h1 id="a-comparison-of-recommendation-models-for-amazons-movie-and-tv-catalog"><a name="user-content-a-comparison-of-recommendation-models-for-amazons-movie-and-tv-catalog" href="#a-comparison-of-recommendation-models-for-amazons-movie-and-tv-catalog" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>A Comparison of Recommendation Models for Amazon&rsquo;s Movie and TV Catalog</h1>
+<h4 id="by-charissa-ding-carrie-yang-and-derek-zhao"><a name="user-content-by-charissa-ding-carrie-yang-and-derek-zhao" href="#by-charissa-ding-carrie-yang-and-derek-zhao" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>by Charissa Ding, Carrie Yang, and Derek Zhao</h4>
+<p>The use of personalization has grown significantly to enhance the customer experience in various industries and has become especially indispensable in e-commerce. An online retailer that is able to make high quality recommendations for its customers is likely to sell more products and thus increase revenue and, by extension, profit. And if said retailer earns a reputation for providing accurate recommendations, it will be more effective at retaining customers and fostering trust about future recommendations, further increasing sales, revenue, and profit in the long run.</p>
+<p>In this project, we survey the effectiveness of various traditional recommendation methods by testing their performance on varying-sized samples of the Amazon Movie and TV Reviews dataset.</p>
+<h4 id="contents"><a name="user-content-contents" href="#contents" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Contents</h4>
+<ul>
+<li><a href="#data">Data</a></li>
+<li><a href="#evaluation-metrics">Evaluation Metrics</a></li>
+<li><a href="#models">Models</a></li>
+<li><a href="#methodology">Methodology</a></li>
+<li><a href="#results">Results</a></li>
+<li><a href="#concluding-remarks">Concluding Remarks</a></li>
+</ul>
+<h2 id="data"><a name="user-content-data" href="#data" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Data</h2>
+<h4 id="source-and-structure"><a name="user-content-source-and-structure" href="#source-and-structure" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Source and structure</h4>
+<p>The data used for this project comes from a collection of <a href="http://jmcauley.ucsd.edu/data/amazon/">Amazon Product Data</a> maintained by Dr. Julian McAuley and the University of California at San Diego. The Movie and TV dataset from this collection contains reviews of films and TV series available for purchase in Amazon&rsquo;s catalog. Each review was written between <strong>May 1996</strong> and <strong>July 2014</strong> and contains the following relevent features:</p>
+<ul>
+<li><strong>reviewerID</strong>: An alphanumeric string that uniquely identifies the user/author of the review.</li>
+<li><strong>asin</strong>: The Amazon Standard Identification Number is a 10-character alphanumeric string that uniquely identifies a product within Amazon&rsquo;s catalog</li>
+<li><strong>rating</strong>: An integer from 1 to 5, inclusive, that indicates the number of stars a user has rated for a particular item, with larger numbers corresponding to increased favorability.<br />
+Additional features such as the text of the review or the number of helpfulness votes of the review are also included in the dataset, however, traditional recommender system models are not suited for utilizing this data, so it is excluded from this project.</li>
+</ul>
+<h4 id="summary"><a name="user-content-summary" href="#summary" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Summary</h4>
+<p>Amazon&rsquo;s Movie and TV Review dataset consists of <strong>1.7 million</strong> explicit ratings provided by <strong>123,960</strong> unique users for <strong>50,052</strong> unique items. The data has been pre-filtered so that all users have given at least 5 ratings and all items have received at least 5 ratings. Despite the pre-filtering, there are only 1.7 million available ratings for <strong>6 billion</strong> user-item pairs, resulting in a low density: <strong>0.027%</strong>. Such a high level of sparsity can be attributed to the fact that the dataset only contains ratings for those users who have written a review for an item and does not contain ratings for those users that only give star ratings. Thus, the density of the dataset is artificially low. In conjunction with the fact that such a low density presents challenges in generating suitable sample sets, the dataset is carefully re-filtered to produce a higher density using a procedure explained in greater detail later.</p>
+<h4 id="exploratory-data-analysis"><a name="user-content-exploratory-data-analysis" href="#exploratory-data-analysis" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Exploratory Data Analysis</h4>
+<p>The distribution of ratings in the Amazon Movie and TV dataset is heavily skewed towards 5-star ratings. In fact, over half of the ratings are 5 stars, pulling the average rating up to <strong>4.11</strong> stars. Such an unbalanced distribution may prove challenging when trying to treat the data as a collection of explicit ratings, since the more dominant a single rating value becomes, the more the dataset resembles a collection of binary implicit ratings. Nonetheless, we proceed as planned, keeping in mind that binarizing the ratings remains an option for a future project.</p>
+<p><img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/dist-ratings.png" /></p>
+<p>We also observe the typical long-tail distribution when calculating the number of reviews written by each reviewer: a small number of users are highly prolific while the vast majority of users write only a few reviews. In fact, the average and median number of reviews per user is <strong>14</strong> and <strong>7</strong>, respectively.</p>
+<p align='center'>
+  <img src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/num-reviews-per-user.png">
+  Note: reviewer rank refers to the rank of the reviewer in terms of the number of reviews that reviewer has written.
+</p>
+
+<p>The same pattern can be observed in the number of reviews per item. Because there are far fewer items than reviewers, we naturally expect that the median and average review count per item, <strong>13</strong> and <strong>33.9</strong> respectively, is higher than that per reviewer.</p>
+<p align='center'>
+  <img src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/num-reviews-per-item.png">
+  Note: item rank refers to the rank of the item in terms of the number of reviews that item has received.
+</p>
+
+<p>In addition, we observe that over <strong>90%</strong> of reviewers give average star ratings above a <strong>3</strong>. A typical reviewer rates items with an average of <strong>4.2 stars</strong>. Intuitively, this makes sense because people tend to only purchase items already like or believe they will like. It is also possible that the act of purchasing an item predisposes a customer to liking it.</p>
+<p>Finally, it is worth mentioning the number of reviews per month is relatively stable from December 1999 to June 2012. On September 4, 2012, Amazon signed a deal with Epix to feature a much larger library of popular movies that may have contributed to the dramatic rise in monthly review volume.</p>
+<p><img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/num-reviews-over-time.png" /></p>
+<h2 id="models"><a name="user-content-models" href="#models" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Models</h2>
+<p>In the context of a recommendation problem, a predictive model is an algorithm capable of using existing user-item ratings, such as those already present in the dataset, to infer missing user-item ratings (i.e. how a user would rate an item they have not actully rated). For the problem of generating recommendations from the Amazon Movie and TV Reviews dataset, we consider 4 baseline models and 3 traditional models:</p>
+<ul>
+<li><strong>Averaging baseline</strong>: The averaging baseline simply calculates the overall average of all ratings and uses this value as the prediction for all missing ratings. It is the crudest of all models.</li>
+<li><strong>Manual baseline</strong>: The manual baseline is a more nuanced baseline where a predicted rating is calculated as the sum of the overall average, user bias, and item bias. A user&rsquo;s bias is manually calculated as the average of all ratings that a user has made subtracted from the overall average. Similarly, an item&rsquo;s bias is manually calculated as the average of all ratings that an item has received subtracted from the overall average.</li>
+<li><strong>Stochastic gradient descent (SGD) baseline</strong>: The <a href="http://surprise.readthedocs.io/en/stable/basic_algorithms.html#surprise.prediction_algorithms.baseline_only.BaselineOnly">SGD baseline</a> is one of two <em>learned</em> baseline models. It is the same as the manual baseline model, except rather than explicitly calculating values for each user and item bias, the user and item biases are parameters learned through optimizing an objective function using SGD.</li>
+<li><strong>Alternating least squares (ALS) baseline</strong>: The <a href="http://surprise.readthedocs.io/en/stable/basic_algorithms.html#surprise.prediction_algorithms.baseline_only.BaselineOnly">ALS baseline</a> is essentially the SGD baseline but with ALS replacing SGD as the method of optimization.</li>
+<li><strong>Unconstrained Matrix Factorization (SVD)</strong>: Unconstrained matrix factorization, commonly but incorrectly known as <a href="http://surprise.readthedocs.io/en/stable/matrix_factorization.html#surprise.prediction_algorithms.matrix_factorization.SVD">singular value decomposition</a>, is a method wherein a full ratings matrix is approximated as the product of matrices of latent vectors, which are learned from the available ratings. Matrix factorization techniques are particularly well-suited for inferring missing ratings in a high sparsity ratings matrix.</li>
+<li><strong>Nonnegative Matrix Factorization (NMF)</strong>: <a href="http://surprise.readthedocs.io/en/stable/matrix_factorization.html#surprise.prediction_algorithms.matrix_factorization.NMF">NMF</a> is a variant of SVD with the constraint that all latent vectors may only contain positive values.</li>
+<li><strong>Item-based K-Neighbest Neighbors with Normalization</strong>: <a href="http://surprise.readthedocs.io/en/stable/knn_inspired.html#surprise.prediction_algorithms.knns.KNNWithZScore">KNN</a> is a predictive method where the inferred rating for a user-item pair is calculated as a linear combination of the ratings for the k most similar items that user has already rated. The weights in the linear combination are simply the normalized similarities between the target item and the rated items. We choose an item-based method since there are far fewer unique items than unique users, allowing for faster computation of item similarities compared to user similarities. Normalization is chosen to account for the fact that users and items can be biased in terms of their average ratings as well as have different degrees of ratings variance. Given that the Amazon ratings data suffers from a glut of 5-star ratings, it is important to consider that some users&rsquo; ratings may skew positive with little variance, so normalizing these ratings may help the model perform better.</li>
+</ul>
+<h2 id="evaluation-metrics"><a name="user-content-evaluation-metrics" href="#evaluation-metrics" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Evaluation Metrics</h2>
+<p>Below we define the metrics used to evaluate the performance of each predictive model. In the context of an online retailer making purchase recommendations to its customers, the following four evaluation criteria are particularly relevant:</p>
+<ol>
+<li><strong>Mean absolute error (MAE)</strong>: MAE is the average of the absolute value of the difference between a predicted user-item rating and the actual user-item rating. It is a useful metric for understanding how close the typical predicted rating is from the actual rating.</li>
+<li><strong>Precision</strong>: Given a trained model, a specific user, and a set of test ratings that were not used to train the model, we can infer the rating for all items that user has rated in the test set and recommend the <em>k</em> items with the highest predicted ratings - this is the set of <strong>recommended items</strong>. Of the items the user has already rated in the test set, those items that the user rated 4 or 5 stars forms the set of <strong>relevant items</strong>. Precision, then, is number of recommended and relevant items divided by the number of recommended items. In other words, precision measures the proportion of relevant items in the set of items that are recommended to a customer. For an online retailer seeking to provide personalized recommendations to its customers, this metric is arguably more important than MAE since the retailer should be loathe to recommend items that a customer may not actually like.</li>
+<li><strong>Catalog coverage</strong>: Coverage is the number of items that are recommended at least once divided by the total number of items in the catalog. For an online retailer, maximizing catalog coverage is desirable as a larger variety of products can be surfaced through recommendation, thereby increasing the chances that a customer may discover a movie or TV show genuinely new and unexpected for them.</li>
+<li><strong>Runtime</strong>: An ideal predictive model is also one that can be trained without costing too much time. In order to keep a model fresh, it should be trained at regular intervals whenever new ratings data is collected. The faster the model is able to train, the more frequent these training intervals can be, and the fresher and more effective the model will be.</li>
+</ol>
+<h2 id="methodology"><a name="user-content-methodology" href="#methodology" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Methodology</h2>
+<h4 id="data-sampling"><a name="user-content-data-sampling" href="#data-sampling" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Data Sampling</h4>
+<p>In order to evaluate how the effectiveness of each model changes with varying amounts of ratings data, we sample the original dataset to produce sample sets of different sizes. Of particular importance is ensuring that these sample sets have as close to the same densities as possible so that the performance of a model in each sample set can be more readily compared. The creation of a sample set that controls for density can be achieved as follows:</p>
+<ol>
+<li>Sample a specified proportion <em>p</em> of the original ratings data randomly.</li>
+<li>Filter the sampled data so that all users have rated at least <em>k</em> movies and all movies have received at least <em>k</em> ratings.</li>
+</ol>
+<p>By strategically choosing values of <em>p</em> and <em>k</em> while sampling, we create sample sets of different sizes but with densities as close as possible.</p>
+<table>
+<thead>
+<tr>
+<th>Sample set</th>
+<th>% Sampled before filtering (<em>p</em>)</th>
+<th><em>k</em></th>
+<th>Density</th>
+<th>% Actually sampled</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ratings18</td>
+<td>100</td>
+<td>20</td>
+<td>0.008</td>
+<td>18</td>
+</tr>
+<tr>
+<td>Ratings07</td>
+<td>50</td>
+<td>13</td>
+<td>0.007</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Ratings02</td>
+<td>25</td>
+<td>9</td>
+<td>0.007</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Ratings01</td>
+<td>10</td>
+<td>5</td>
+<td>0.005</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h4 id="hyperparameter-search-and-model-tuning"><a name="user-content-hyperparameter-search-and-model-tuning" href="#hyperparameter-search-and-model-tuning" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Hyperparameter Search and Model Tuning</h4>
+<p>For hyperparameter searches, we eschew the traditional brute force method of grid searching for optimal hyperparameters and instead turn to a form of Bayesian optimization utilizing <a href="http://steventhornton.ca/hyperparameter-tuning-with-hyperopt-in-python/">tree-structured Parzen estimators (TPE)</a>. It has been show that Bayesian optimization is a more effective model tuning method than random search and that random search is a more effective model tuning method than grid search. Bayesian optimization works by iteratively making a guess about the optimal combination of hyperparameter values, testing that guess by evaluating a model with those hyperparameter values, and based on the model&rsquo;s performance, positing an updated guess. In this way, it is able to converge faster to optimal hyperparameter values than grid search or random search. For all models, this procedure is applied on the <strong>Ratings18</strong> sample set.</p>
+<h5 id="unconstrained-matrix-factorization"><a name="user-content-unconstrained-matrix-factorization" href="#unconstrained-matrix-factorization" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Unconstrained Matrix Factorization</h5>
+<p>Below are the results of a TPE search for optimal hyperparameter values of an SVD model.</p>
+<table>
+<thead>
+<tr>
+<th>Hyperparameter</th>
+<th>Description</th>
+<th>Optimal Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n_epochs</td>
+<td>The number of cycles a dataset is utilized for model training prior to termination</td>
+<td>28</td>
+</tr>
+<tr>
+<td>n_factors</td>
+<td>The number of latent factors used to factorize the ratings matrix</td>
+<td>12</td>
+</tr>
+<tr>
+<td>reg_all</td>
+<td>The regularization parameter applied to all latent values to prevent overfitting</td>
+<td>0.285</td>
+</tr>
+</tbody>
+</table>
+<p>Data from the full search is plotted below.</p>
+<ul>
+<li>The first plot of each row shows the hyperparameter value tested at each iteration. As TPE discovers which value is more effective, it narrows its search region, which is most evident for the <strong>reg_all</strong> hyperparameter.</li>
+<li>The second plot of each row shows the frequency with which a particular hyperparameter value is tested. TPE tends to sample more frequently from regions where model performance is better. </li>
+<li>The third plot of each row shows the various loss values associated with a given hyperparameter value. The loss value is the average of 3-fold cross-validated MAE&rsquo;s achieved by the model using a given hyperparameter configuration.</li>
+</ul>
+<p><img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/svd-params-1.png" /><br />
+<img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/svd-params-2.png" /><br />
+<img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/svd-params-3.png" /></p>
+<p>As expected, the longer a model is allowed to train for, the better its performance will be, however this only true up to a point (around 28 epochs). More surprising is the fact that values for the number of latent vectors correspond to improved MAE&rsquo;s. This is likely due to the fact that too many latent vectors will cause SVD to overfit the data.</p>
+<h5 id="non-negative-matrix-factorization"><a name="user-content-non-negative-matrix-factorization" href="#non-negative-matrix-factorization" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Non-negative Matrix Factorization</h5>
+<p>Below are the results of a TPE search for optimal hyperparameter values of an NMF model.</p>
+<table>
+<thead>
+<tr>
+<th>Hyperparameter</th>
+<th>Description</th>
+<th>Optimal Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n_epochs</td>
+<td>The number of cycles a dataset is utilized for model training prior to termination</td>
+<td>26</td>
+</tr>
+<tr>
+<td>n_factors</td>
+<td>The number of latent factors used to factorize the ratings matrix</td>
+<td>18</td>
+</tr>
+<tr>
+<td>reg_bi</td>
+<td>The regularization parameter applied to item bias values</td>
+<td>0.0385</td>
+</tr>
+<tr>
+<td>reg_bu</td>
+<td>The regularization parameter applied to user bias values</td>
+<td>0.0285</td>
+</tr>
+<tr>
+<td>reg_pu</td>
+<td>The regularization parameter applied to latent user vectors</td>
+<td>0.018</td>
+</tr>
+<tr>
+<td>reg_qi</td>
+<td>The regularization parameter applied to latent item vectors</td>
+<td>0.0841</td>
+</tr>
+</tbody>
+</table>
+<p>Data from the full search is plotted below.</p>
+<p><img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/nmf-params-1.png" /><br />
+<img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/nmf-params-2.png" /><br />
+<img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/nmf-params-3.png" /><br />
+<img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/nmf-params-4.png" /><br />
+<img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/nmf-params-5.png" /><br />
+<img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/nmf-params-6.png" /></p>
+<h5 id="k-nearest-neighbors-with-normalization"><a name="user-content-k-nearest-neighbors-with-normalization" href="#k-nearest-neighbors-with-normalization" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>K-Nearest Neighbors with Normalization</h5>
+<p>Below are the results of a TPE search for optimal hyperparameter values of an item-based normalized KNN model.</p>
+<table>
+<thead>
+<tr>
+<th>Hyperparameter</th>
+<th>Description</th>
+<th>Optimal Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>k</td>
+<td>The maximum number of nearest item neighbors used to make a ratings prediction.</td>
+<td>37</td>
+</tr>
+<tr>
+<td>min_k</td>
+<td>The minimum number of item neighbors needed to make a ratings prediction. Otherwise use average of all ratings for target item.</td>
+<td>1</td>
+</tr>
+<tr>
+<td>similarity</td>
+<td>Similarity function. Alternatives: cosine, pearson&rsquo;s correlation</td>
+<td>mean squared difference</td>
+</tr>
+</tbody>
+</table>
+<p>Data from the full search is plotted below. Surprisingly, the value for <em>k</em> appears not to have much bearing on the model&rsquo;s performance, but a <em>min_k</em> of 1 does. This means that even if data is sparse, it is better to use 1 item neighbor to predict a rating than use a generic average. Also significant is how using mean squared difference as opposed to Pearson&rsquo;s correlation or cosine similarity for the item similarity function seems to improve the model&rsquo;s accuracy.</p>
+<p><img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/knn-params-1.png" /><br />
+<img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/knn-params-2.png" /><br />
+<img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/knn-params-3.png" /></p>
+<h2 id="results"><a name="user-content-results" href="#results" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Results</h2>
+<p>For each model, we tune it for optimal hyperparameters applying TPE on the <strong>Ratings18</strong> sampleset as previously described. We then test the model on each sample set (Ratings18, Ratings07, Ratings02, Ratings01) using 5-fold cross validation. That is, given a model and a sample set, the sample set is randomly shuffled and split into 5 folds. One fold is designated the test set while the model is trained on the remaining folds. The trained model is then applied to the test set, on which MAE, precision, and recall are calculated. This process is repeated 4 more times, each time with a different fold designated as the test set. For example, cross-validated tests for SVD on Ratings18 would yield 5 different values for MAE, </p>
+<p>Training times and catalog coverage are calculated without cross validation.</p>
+<h4 id="mean-absolute-error"><a name="user-content-mean-absolute-error" href="#mean-absolute-error" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Mean absolute error</h4>
+<p>Below we plot how mean absolute error for each model changes with respect to sample set size (number of ratings). The two plots are the same but scaled differently for clarity. For each model and sample set size, 5 MAE&rsquo;s are calculated from cross-validation, so we plot the mean of those 5 values as well as a shaded region corresponding to one standard deviation above and below the mean.</p>
+<p><img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/mae-results.png" /></p>
+<p>It is immediately clear that the averaging baseline performs quite poorly compared to any other alternative. As for the rest of the models, KNN is the most &lsquo;data hungry&rsquo;. That is, with enough data, KNN shows comparable performance with the other models and even surpasses the manual baseline, but with fewer ratings available to train on, its accuracy degrades quite noticeably. This makes sense because it becomes increasingly difficult to calculate the similarity between items with less data available.</p>
+<p>Rather surprisingly, the two learned baseline models, ALS and SGD, outperform (though by a small margin) more sophisticated matrix factorization methods like SVD and NMF. A possible explanation is that because the ratings are so skewed and unevenly distributed (recall that the majority of ratings are 5&rsquo;s), the benefit conferred by using more complex models may be minimal to non-existent.</p>
+<h4 id="precision"><a name="user-content-precision" href="#precision" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Precision</h4>
+<p>Below we plot how precision at <em>k=10</em> recommendations for each model changes with respect to sample set size. Because the averaging baseline predicts the same rating for each user-item pair, it is not useful to compute top-k precision, so it is excluded from the plot. The first and second row of plots differ only in that the second row does not contain shaded regions indicating the standard deviation.<br />
+<img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/precision-results-1.png" /><br />
+<img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/precision-results-2.png" /><br />
+The manual baseline has both a much lower precision than the rest of the models as well as much more unstable performance. Here too, we notice that the ALS and SGD baselines perform marginally better than SVD and KNN. In general, precision is not much improved with more data, with most models performing at between 0.7 and 0.75 precision. This means that for the typical user, 7 to 8 of the top 10 recommendations made will be movies or TV shows they would have rated as a 4 or 5.</p>
+<h4 id="training-time"><a name="user-content-training-time" href="#training-time" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Training time</h4>
+<p>Whereas many of the models do not show significantly different performance in terms of MAE and precision, they take a much greater variety of training times.<br />
+<img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/runtime-results.png" /><br />
+The averaging and ALS baselines train the fastest, requiring under 5 seconds even for the Ratings18 sample set. While KNN appears to be moderately efficient at training, it appears to scale poorly, and given data of sufficiently large size, may take the longest time to train. Also notable is the fact that the matrix factorization methods, SVD and NMF train the slowest across all sample set sizes.</p>
+<h4 id="catalog-coverage"><a name="user-content-catalog-coverage" href="#catalog-coverage" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Catalog Coverage</h4>
+<p>We assess catalog coverage for each model on only the <strong>Ratings07</strong> sample set. In comparing the coverage rates of each model we find that KNN and NMF have the highest coverage rates at over 25%. However, in comparison to SVD, the ALS baseline, and the SGD baseline, KNN and NMF actually perform slightly worse in terms of MAE and precision. This is the trade-off of accuracy and coverage we ususally face when making recommendations, an extreme example being an algorithm that provides 100% coverage by simply predicting random ratings for all entries.<br />
+<img alt="" src="/Users/derekzhao/columbia/ieor-4571-personalization/project/part-01/imgs/coverage-results.png" /><br />
+A reason that KNN and NMF provide much better coverage than the other models is that these two models are much more likely to predict ratings of 5. This means that when generating the top 10 recommendations for a user with many predicted 5 ratings, the recommendation system will simply randomly pick 10 items out of all items with predicted ratings of 5 for that user. In this way, KNN and NMF would inadvertantly cause a recommender system to surface a much larger variety of movies and TV shows.</p>
+<h2 id="conclusion"><a name="user-content-conclusion" href="#conclusion" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Conclusion</h2>
+<h4 id="choosing-a-final-model"><a name="user-content-choosing-a-final-model" href="#choosing-a-final-model" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Choosing a final model</h4>
+<p>While the ALS baseline performs best in terms of MAE, precision, and is the second fastest model to train, its extremely low catalog coverage means that a tiny fraction of an online retailer&rsquo;s product catalog would actually be recommended to customers. Thus, KNN and NMF remain the only viable options for choice of model. KNN only slightly outperforms NMF in terms of precision, but given that it is liable to scale extremely poorly in terms of training time, we would choose to implement NMF in a production recommender system for this data.</p>
+<h4 id="further-work"><a name="user-content-further-work" href="#further-work" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Further work</h4>
+<p>The ALS baseline, while fast and accurate, does not recommend a sufficient variety items in the retailer&rsquo;s catalog. One way to address this deficiency is to forego recommending top k items altogether and instead recommend a random sample of <em>relevant</em> items (items for which the system predicts the user would rate a 4 or 5). Implementing a recommender system in this fashion would affect precision for all models but merits an additional look given that coverage could drastically increase for those models with extremely low coverage.</p>
+<p>An alternate recommendation method to consider for profit maximization would be to recommend the top k <em>relevant</em> items but sorted by profit margin. However, such a system could possibly suffer from much reduced coverage due to the sorting mechanism.</p>
+<p>Finally, because the vast majority of ratings in the Amazon Movie and TV reviews dataset were 4&rsquo;s or 5&rsquo;s, and because the difference between recommending an item a user would have rated as a 4 and recommending one a user would have rated as a 5 may not be especially significant, a possibly better approach might have been to simply convert all ratings to implicit ratings. That is, convert all ratings of 4&rsquo;s and 5&rsquo;s to 1&rsquo;s, and discard all other ratings. Whether using implicit data would result in improved precision and coverage is another area of future work could be worthwhile.</p></article></body></html>
